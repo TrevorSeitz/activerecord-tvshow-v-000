@@ -4,5 +4,5 @@ class Show < ActiveRecord::Base
     # rating = shows.where("rating = maximum").order(:desc)
     self.maximum(:rating)
   end
-  
+
 end
