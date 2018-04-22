@@ -10,7 +10,7 @@ class Show < ActiveRecord::Base
   end
 
   def self.lowest_rating
-    Show.order(rating: :asc).first
+    Show.order(rating: :asc).first.rating
   end
 
 end
